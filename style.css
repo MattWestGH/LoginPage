@@ -1,0 +1,82 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(/font/Norse-Bold.otf);
+}
+#body-container {
+  display: flex;
+}
+.logo-background {
+  background-image: url(images/photo-1585202900225-6d3ac20a6962.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 75vh;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#odin-title {
+  font-family: norse-bold;
+  color: white;
+  font-size: 100px;
+}
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 0px;
+}
+#logo-container img {
+  height: 150px;
+}
+#sign-up-container {
+  height: 100vh;
+}
+.img-ref {
+  display: flex;
+  justify-content: center;
+
+  bottom: 0;
+}
+.img-ref p {
+  color: white;
+}
+.img-ref p a {
+  color: rgb(245, 245, 245);
+}
+#sign-up-container {
+  background-color: rgb(245, 245, 245);
+  height: 100vh;
+}
+.detail-sheet {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 33vh;
+  box-shadow: 0px 2px 7px rgb(179, 179, 179);
+}
+.cta p a {
+  text-decoration: none;
+  color: #596d48;
+}
+.create-acc {
+  height: 45px;
+  width: 190px;
+  border: none;
+  background-color: #596d48;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 2, 2, 2;
+}
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}

@@ -3,7 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign up Page</title>
   </head>
-  <body></body>
+  <body>
+    <div id="body-container">
+      <div class="logo-background">
+        <div id="logo-container">
+          <img src="images/odin-lined.png" alt="Odin Logo" />
+          <h1 id="odin-title">ODIN</h1>
+        </div>
+        <div class="img-ref">
+          <p>
+            Photo by
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+            <a
+              href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="sign-up-container">
+        <div>
+          <p>
+            This is not a real online service! You know you need someting like
+            this in your life to help you realize your deepest dreams. Sign up
+            <i>now</i> to get started.
+          </p>
+          <p>You <i>know</i> you want to.</p>
+        </div>
+        <div class="detail-sheet">
+          <h3>Let's do this!</h3>
+          <form id="sign-up-form" action="">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" required />
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" required />
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" required />
+            <label for="phone-number">PHONE NUMBER</label>
+            <input
+              type="number"
+              name="phone-number"
+              id="phone-number"
+              required
+            />
+          </form>
+        </div>
+        <div class="cta">
+          <button class="create-acc">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

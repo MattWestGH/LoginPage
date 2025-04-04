@@ -2,7 +2,11 @@
   font-family: norse-bold;
   src: url(/font/Norse-Bold.otf);
 }
-
+* {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+}
 #body-container {
   width: 100%;
   padding: 0;
@@ -17,13 +21,6 @@
   height: 100vh;
   position: relative;
   display: flex;
-}
-* {
-  margin: 0;
-  font-size: 17px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 #odin-title {
   font-family: norse-bold;
@@ -66,10 +63,51 @@
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
-  height: 33vh;
+  height: 30vh;
   box-shadow: 0px 2px 7px rgb(179, 179, 179);
+  padding: 10px 40px;
+}
+.main-text {
+  height: 165px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 99px 40px 26px;
+  margin: 30px 0px;
+}
+.main-text p {
+  width: 655px;
+  padding: 20px 0px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.main-text p i {
+  font-size: 22px;
+}
+label {
+  font-weight: 300;
+}
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+span,
+input {
+  font-size: 15px;
+}
+input {
+  width: 260px;
+  height: 25px;
+}
+.cta {
+  margin: 40px;
+}
+.cta button {
+  margin: 0px 0px 40px 0px;
 }
 .cta p a {
   text-decoration: none;
@@ -82,9 +120,36 @@
   background-color: #596d48;
   border-radius: 5px;
   color: white;
-  box-shadow: 2, 2, 2;
+  box-shadow: 0px 2px 7px rgb(179, 179, 179);
 }
 input {
   border: 1px solid #e5e7eb;
   border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+input:focus {
+  border: 1px solid #3383b8;
+  box-shadow: 2px 2px 7px rgb(179, 179, 179);
+}
+input[type="password"]:invalid {
+  border: 1px solid #ff0000;
+  box-shadow: 2px 2px 7px rgb(179, 179, 179);
+}
+.input-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 590px;
+  padding: 10px 0px 10px 0px;
+}
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+h3 {
+  font-size: 23px;
+  padding: 10px 0px;
 }
